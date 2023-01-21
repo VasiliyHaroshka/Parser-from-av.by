@@ -81,5 +81,7 @@ def to_json(data: list) -> None:
 
 
 if __name__ == '__main__':
-    to_excel(parser())
-    to_json(parser())
+    res = parser()
+    if res:
+        to_excel(res)
+        to_json(res)
